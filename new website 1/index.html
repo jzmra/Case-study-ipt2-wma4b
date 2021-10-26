@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Vian Jay Lanao</title>
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+  </head>
+  <body>
+    <div class="header">
+      <a href="https://www.wattpad.com/user/gongln" target="_blank" class="logo">Gong Lanao</a>
+      <div class="header-right">
+        <a class="active" href="#">Home</a>
+        <a href="#stories">Stories</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+
+
+    <div class="row" id="stories"> 
+      <div class="hoverV column">
+        <figure><img id="myImg1" src="assets/img/1.png" alt="Susana Magnaye, is a story about how a women can be strong and even without men they can be successful." style="width:100%" ></figure>
+    	<div class="text"><p>Susana Magnaye</p></div>
+        <figure><img id="myImg2" alt="Ang Keeps ni Karla, is a story about a girl who keeps all of her problem to herself. She is depressed and lonely who finds love and peace." src="assets/img/2.png" style="width:100%"></figure>
+    	<div class="text"><p>Ang Keeps ni Karla</p></div>
+      </div>
+      <div class="hoverV column">
+        <figure><img id="myImg3" alt="2 Be With You Again, is an LGBT story about love, peace, acceptance, and discovering something that they never thought it would happen." src="assets/img/3.png" style="width:100%"></figure>
+    	<div class="text"><p>2 Be With You, Again!</p></div>
+        <figure><img id="myImg4" alt="Bestie Mama, is story about the past, present, and the future. The protagonist wants to see her mom, but her mother died after she was born." src="assets/img/4.png" style="width:100%"></figure>
+    	<div class="text"><p>Bestie Mama'</p></div>
+      </div>
+      <div class="hoverV column">
+        <figure><img id="myImg5" alt="The Toxicity Inside You, is a story about how toxic our minds and how we react negatively on things even though there is no trace of negativity. How people are selfish and manipulative person are." src="assets/img/5.png" style="width:100%"></figure>
+    	<div class="text"><p>The Toxicity Inside You</p></div>
+        <figure><img id="myImg6" alt="Email:krung@hope.com, is a rant and love story, you can rant whatever you want on that email and someone/owner of that email will give you a hope on everything. Looks like someone finds true love in this story." src="assets/img/6.png" style="width:100%"></figure>
+    	<div class="text"><p>Email:krung@hope.com</p></div>
+      </div>
+      <div class="hoverV column">
+        <figure><img id="myImg7" alt="Lustly, I Found You, is a story of Life and how they live the life, it is a romantic comedy named Dory who has unique personality and loved by many." src="assets/img/7.png" style="width:100%"></figure>
+    	<div class="text"><p>Life: Lustly, I Found You</p></div>
+        <figure><img id="myImg8" alt="5 Night Stand, is a lust story, where a girl named Marie Belle does not want a commitment until she finds herself falling for a guy." src="assets/img/8.png" style="width:100%"></figure>
+    	<div class="text" ><p>5 Night Stand: A Lust Story of Marie Belle</p></div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    <h2 class="top1"><span>About me</span></h2>
+
+    <div class="banner_image">
+    <div class="banner_content">
+    <img class="profile" src="assets/img/dahon.jpg" id="mainpicture" alt="Gong Lanao is one of the most cute person in the world based on a book Charot!">
+    <h1>Gong Lanao</h1>
+    <p>I also watch pageant vlogs, performance of queens, and Q&As like paulit ulit. My favorite vloggers are The Sovereign, and HeyAdamG (most of his vids are 30+ mins). Miss Universe 2018, Catriona Gray is really good at Q&A and interviews, hands down. Miss Universe 2015, Pia Wurtzbach is good at pasarela.</p>
+    </div>
+    </div>
+
+
+
+    <div class="footer2" id="about">
+    <ul class="social-network social-circle">
+
+    <li><a class="icoFacebook" href="https://www.facebook.com/lanaogong" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
+    <li><a class="icoTwitter" href="https://www.twitter.com/louisvianbag/" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+
+    <li><a class="icoGoogle" href="mailto:pitoylanao@gmail.com" title="Google"><i class="fa fa-google" target="_blank"></i></a></li>
+
+    <li><a class="icoInstagram" href="https://www.instagram.com/cariviansea/" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+    </div>
+
+
+    <div class="footer">
+    <a href="#">© 2021, Gong Lanao</a>
+    </div>
+
+    <script>
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg1");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg2");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg3");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg4");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg5");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg6");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg7");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg8");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("mainpicture");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+  </body>
+</html>

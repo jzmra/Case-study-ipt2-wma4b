@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+list-style: none;
+text-decoration: none;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+p{
+margin-bottom: 15px;
+font-size: 16px;
+line-height: 20px;
+color: black;
+}
+
+
+h1.title{
+margin-bottom: 20px;
+color: #575757;
+font-family: 'helvetica';
+text-transform: none;
+font-size: 40px;
+word-spacing: 20px;
+letter-spacing: 5px;
+}
+
+
+.home{
+position: relative;
+}
+
+
+/* Banner*/
+.banner_image{
+color: #f8f8ff;
+background-size: cover;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.banner_content{
+text-align: center;
+color: black;
+padding: 5% 15%;
+margin-top: -10%;
+}
+
+.banner_content img{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  width: 850px;
+  border-radius: 5px;
+  height: 420px;
+  margin-top: 75px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.banner_content h1{
+text-transform: uppercase;
+line-height: 38px;
+margin-bottom: 5px;
+margin-top: 15px;
+}
+
+.banner_content h1 span{
+color: black;
+}
+
+.banner_content p{
+color: black;
+}
+
+
+/*NEW DITO ViaKLA*/
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 5% 15%;
+}
+
+.text {
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.9s;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .banner_content img {
+    width: 200px;
+    height:  175px;
+  }
+}
+
+
+/* hover design */
+.hoverV figure:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/*BAGO ULIT*/
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 0% 15%;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 10%;
+  z-index: 55;
+}
+
+.header a {
+  float: left;
+  color: #FEE715FF;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px; 
+  line-height: 40px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header-right a:hover {
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+
+@media screen and (max-width: 600px) {
+.header {
+position: relative;
+}  
+.header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+.top1 {
+  overflow: hidden;
+  text-align: center;
+  margin: 0 15% 75px 15%;
+}
+
+.top1:before,
+.top1:after {
+  background-image: linear-gradient(to bottom right, black, black, black);
+  content:"";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  
+}
+.top1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.top1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+/* Footer */
+.footer{
+width: 100%;
+text-align: center;
+background: black;
+padding: 15px 0;
+}
+
+.footer a{
+color: #FEE715FF;
+}
+
+/*END OF FOOTER 1*/
+
+.footer2 {
+width: 100%;
+text-align: center;
+background: white;
+padding: 10px 0;
+margin-bottom: 30px;
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin: auto;
+  
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0px 15px;
+  
+}
+
+/* footer social icons */
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff; 
+}
+.social-network a.icoGoogle:hover {
+  background-color: #00AB6C;
+}
+.social-network a.icoInstagram:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  color: #FEE715FF;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  color: white;
+}
+
+.social-circle i {
+  color: black;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-circle a {
+  background-color: black;
+/*#f8f8ff*/
+}
+
+.social-circle a.icoFacebook {
+  box-shadow: -3px 2px 15px #3b5998;
+}
+.social-circle a.icoTwitter{
+  box-shadow: -3px 2px 15px #33ccff;
+
+}
+.social-circle a.icoGoogle {
+  box-shadow: -3px 2px 15px #00AB6C;
+
+}
+.social-circle a.icoInstagram {
+  box-shadow: -3px 2px 15px #f09433;
+
+}
+
+
+/* THIS IS THE @MEDIA KEMERUTTT*/
+@media (max-width: 720px){
+
+.banner_content img{
+ margin-top: 100px;
+}
+
+.banner_content p{
+  color: black;
+  margin-bottom: 100px;
+}
+
+.banner_image{
+ height: 400px;
+}
+
+.row {
+  padding: 3% 15%;
+}
+}
+
+@media (max-width: 1167px){
+.row {
+  padding: 8% 15%;
+}
+}
+
+@media (max-width: 800px){
+.row {
+  padding: 9% 15%;
+}
+}
+@media (max-width: 650px){
+.row {
+  padding: 10% 15%;
+}
+}
+
+
+
+/*LAST*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+z-index: 200;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  
+  
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
